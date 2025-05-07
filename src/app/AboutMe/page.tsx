@@ -22,29 +22,22 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export default function Home() {
+export default function AboutMe() {
   return (
-    <div className="bg-primary grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-2 pb-20 gap-2 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className=" flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="w-4xl bg-amber-700">
-          <NavigationMenu className="w-4xl">
-            <NavigationMenuList  className="w-4xl">
-              <NavigationMenuItem  className="w-4xl">
-                <ul className="border-2 rounded-xl grid gap-1 p-2 md:w-[10rem] lg:w-[20rem] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3">
-                    <NavigationMenuLink href="AboutMe" className="text-secondary">About Me</NavigationMenuLink>
-                  </li>
-                  <li className="row-span-3">
-                    <NavigationMenuLink href="TechStack" className="text-secondary">Tech Stack</NavigationMenuLink>
-                  </li>
-                  <li className="row-span-3">
-                    <NavigationMenuLink href="Projects" className="text-secondary">Projects</NavigationMenuLink>
-                  </li>
-                </ul>   
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
+    <div className="bg-black-500 grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <NavigationMenu>
+        <NavigationMenuList>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <NavigationMenuLink>Link</NavigationMenuLink>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+
+
         <Card>
           <CardHeader>
             <CardTitle>Card Title</CardTitle>
